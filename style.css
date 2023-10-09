@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-name a{
+    max-width: 100px;
+    color: white;
+}
+
+.nav-link{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a{
+    color: #fff;
+    padding-bottom: 0.75rem;
+}
+
+.link a::after{
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #1e40af ;
+}
+
+.btn a{
+    color: #fff;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 50px 50px 1000px 50px #1d4ed8 ;
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .content .btn{
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .image{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+header .image:hover{
+    transform: scale(1.05);
+}
+
+
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .image img{
+    max-width: 600;
+    margin: auto;
+    border-radius: 15px;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.exp{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.exp .card{
+    background-color: #27272a;
+    padding: 2rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.exp .card:hover{
+    background-color: #323232 ;
+    border-color: #fff;
+}
+
+.exp .card span{
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.exp .card h4{
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.exp .card li{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.organization{
+    margin-top: 4rem;
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+section .header-organization{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.organization .card{
+    color: #27272a;
+    background-color: #27272a;
+    padding: 2rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.organization .card:hover{
+    background-color: #323232 ;
+    border-color: #fff;
+}
+
+.organization .card span{
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.organization .card h4{
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.organization .heading-organization{
+    height: 15%;
+}
+
+.organization .card ul li{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+footer .footer-column{
+    max-width: 600px;
+}
+
+footer .footer-column h3{
+    max-width: 100px;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+footer .footer-column p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .footer-column h4{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .footer-column .sosmed-column{
+    list-style: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+footer .footer-column .sosmed-column > a{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+footer .footer-column .sosmed-column > a:hover{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #1d4ed8;
+}
+
+footer .footer-column > a{
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .footer-column > a:hover{
+    color: #1d4ed8;
+}
+
+.copyright{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* responsive  */
+@media (width < 600px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav-link{
+        display: none;
+    }
+
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header .image{
+        grid-area: 1/1/2/2;
+        width: 100px;
+    }
+
+    header .image::before{
+        display: none;
+    }
+
+    .exp{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .organization{
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        justify-items: center ;
+    }
+
+    .organization .card .heading-organization{
+        margin-bottom: 3rem;
+    }
+
+    footer{
+        display: block;
+        align-content: center;
+    }
+
+    footer .footer-column{
+        max-width: 300px;
+    }
+
+    .copyright{
+        display:flex;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
