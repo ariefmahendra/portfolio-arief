@@ -320,12 +320,6 @@ footer .footer-column .sosmed-column > a{
     color: #ccc;
 }
 
-footer .footer-column .sosmed-column > a:hover{
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #1d4ed8;
-}
-
 footer .footer-column > a{
     display: block;
     color: #ccc;
@@ -403,11 +397,3 @@ footer .footer-column > a:hover{
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
