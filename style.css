@@ -373,14 +373,12 @@ footer .footer-column > a:hover{
     }
 
     .organization{
-        display: flex;
+        display: block;
         max-width: 100%;
-        justify-content: center;
-        justify-items: center ;
     }
 
-    .organization .card .heading-organization{
-        margin-bottom: 3rem;
+    .organization .card{
+        margin-bottom: 2rem;
     }
 
     footer{
