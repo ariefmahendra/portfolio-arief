@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <script src="main.js"></script>
     <title>PORTFOLIO | Arief Mahendra</title>
 </head>
 <body>
-    <nav>
+    <nav> 
         <div class="nav-name"><a href="#">Arief Mahendra</a></div>
         <ul class="nav-link">
             <li id="link1" class="link"><a href="#resume">Resume</a></li>
@@ -16,10 +17,26 @@
             <li id="link1" class="link"><a href="#organization">Organization & Volunteering</a></li>
             <li id="link1" class="link"><a href="#contact">Contact</a></li>
         </ul>
-        <div class="btn">
+        <div class="btn-navbar">
             <a href="https://wa.me/6282182425642" rel="noopener" target="_blank">Hire Me</a>
         </div>
+
+        <!-- responsive -->
+        <div title="hamburger-menu" class="hamburger" onclick="toggleMobileMenu()">
+            <span class="hamburger-1"></span>
+            <span class="hamburger-2"></span>
+            <span class="hamburger-3"></span>
+        </div>
     </nav>
+    <div>
+        <ul class="nav-link-responsive-nonaktif">
+            <li id="link1" class="link"><a href="#resume">Resume</a></li>
+            <li id="link1" class="link"><a href="#experience">Experience</a></li>
+            <li id="link1" class="link"><a href="#organization">Organization & Volunteering</a></li>
+            <li id="link1" class="link"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
 
 
     <header class="container" id="resume">
@@ -29,7 +46,7 @@
             <h4>PORTFOLIO</h4>
             <h1>Hi, I'm <span>Arief Mahendra</span>, Junior Frontend Developer</h1>
             <p>
-                Bachelor's Degree in Electrical Engineering. I am passionate about Power, Control, Manufacture and IoT. and have a proven track record of internship at UP3 PLN Metro and have been involved in a mirocle project.
+                Bachelor's Degree in Electrical Engineering. I am passionate about Frontend Developer and IoT. and have a proven track record of fronted developer for develop ITERA procurement website and have been involved in a mirocle project.
             </p>
             <div class="btn">
                 <a href="#experience">Get Started</a>
