@@ -71,7 +71,7 @@ nav{
     width: 70%;
 }
 
-.btn-navbar{
+.btn-navbar, .home-porto{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: white;
@@ -81,11 +81,12 @@ nav{
     transition: all 0.3s ease;
 }
 
-.btn-navbar:hover{
+
+.btn-navbar:hover, .home-porto:hover{
     background-color: #1e40af ;
 }
 
-.btn-navbar a{
+.btn-navbar a, .home-porto a{
     color: #fff;
 
 }
@@ -570,6 +571,11 @@ footer .footer-column > a:hover{
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .gambar {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
     .organization{
         display: block;
         max-width: 100%;
