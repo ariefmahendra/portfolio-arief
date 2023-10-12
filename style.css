@@ -71,8 +71,18 @@ nav{
     width: 70%;
 }
 
-.btn-navbar, .home-porto{
+.btn-navbar {
     padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-porto{
+    padding: 7px 7px;
     font-size: 1rem;
     color: white;
     background-color: #1d4ed8;
@@ -470,13 +480,18 @@ footer .footer-column > a:hover{
 }
 
 /* responsive  */
-@media (width < 1000px){
+@media (width < 900px){
 
     nav{
+        position: fixed;
+        left: 0;
+        top: 0;
         display: flex;
         justify-content: space-between;
-        margin: 1rem 1rem;
-        padding: 1px 1px;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        z-index: 15;
+        background-color: #18181B;
     }
     
     .nav-link{
@@ -523,18 +538,24 @@ footer .footer-column > a:hover{
 
     .nav-link-responsive-nonaktif{
         display: none;
+        transition: all 0.3s ease-in-out;
     }
 
     .nav-link-responsive-aktif {
+        position: fixed;
+        left: 0;
+        top: 3rem;
         display: flex;
         flex-direction: column;
-        position: absolute;
         justify-content: center;
         align-items: center;
         width: 100%;
         background-color: #18181B;
         z-index: 120;
+        padding-top: 1.5rem;
         transition: all 0.3s ease-in-out;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
     }
 
     .nav-link-responsive-aktif .link{
