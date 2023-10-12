@@ -37,6 +37,10 @@ nav{
     color: white;
 }
 
+.nav-name:hover{
+    background-color: transparent;
+}
+
 .nav-link{
     display: flex;
     list-style: none;
@@ -173,21 +177,6 @@ header .image:hover{
     transform: scale(1.05);
 }
 
-
-header .image::before{
-    content: "o";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 38rem;
-    font-weight: 400;
-    line-height: 20rem;
-    color: #1d4ed8;
-    opacity: 0.2;
-    z-index: -100;
-}
-
 header .image img{
     max-width: 600;
     margin: auto;
@@ -202,6 +191,41 @@ section .header{
     font-weight: 600;
 }
 
+.header-skill{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.skill li{
+    color: #fff;
+    list-style: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #27272a;
+    transition: all 0.2s ease-in-out;
+}
+
+.skill li:hover{
+    border-color: #fff;
+    background-color: #323232;
+    transform: scale(1.1);
+}
+
+.skill ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .exp{
     margin-top: 4rem;
     display: grid;
@@ -209,19 +233,58 @@ section .header{
     gap: 2rem;
 }
 
+.exp-portofolio-1{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .exp .card{
     background-color: #27272a;
-    padding: 2rem;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
-
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
 }
 
-.exp .card:hover{
+.exp-portofolio-1 .card-portofolio-1{
+    background-color: #27272a;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.exp .card:hover , .exp-portofolio-1 .card-portofolio-1:hover{
     background-color: #323232 ;
     border-color: #fff;
 }
+
+.exp .header-exp{
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    z-index: 10;
+} 
+
+
+.exp .thumbnail{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 5;
+}
+
 
 .exp .card span{
     display: inline-block;
@@ -240,10 +303,48 @@ section .header{
     font-weight: 600;
 }
 
-.exp .card li{
+.exp-portofolio-1 .card-portofolio-1 h4{
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.exp .card ul li{
     color: #ccc;
     margin-bottom: 1rem;
 }
+
+.exp-portofolio-1 .card-portofolio-1 ul li{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.exp .card .toggle-exp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    gap: 1rem;
+}
+
+.exp .card .toggle-exp a{
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.gambar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.gambar img{
+    border-radius: 5px;
+}
+
 
 .organization{
     margin-top: 4rem;
@@ -439,8 +540,8 @@ footer .footer-column > a:hover{
         margin-bottom: 10px;
     }
 
-    .nav-link-responsive-nonaktif .link a {
-        text-decoration: none; 
+    .nav-link-responsive-aktif li{
+        list-style: none;
     }
 
     header{
@@ -458,6 +559,11 @@ footer .footer-column > a:hover{
 
     header .image::before{
         display: none;
+    }
+
+    .skill ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .exp{
