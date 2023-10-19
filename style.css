@@ -210,11 +210,18 @@ section .header{
     font-weight: 600;
 }
 
+.skill ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .skill li{
     color: #fff;
     list-style: none;
     font-size: 1.2rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
